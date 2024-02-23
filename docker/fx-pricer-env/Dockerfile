@@ -9,3 +9,6 @@ ENV APP_VERSION 1.0
 RUN apt-get update && \
     apt-get install -y \
 	vim less apt-utils
+
+# Install the dependencies for libsqlite3
+RUN apt-get install libsqlite3-dev
